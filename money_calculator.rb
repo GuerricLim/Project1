@@ -23,8 +23,8 @@ class MoneyCalculator
   end
 
   def change(price)
-  if @change != @total.to_i
-  	@change = @total.to_i - price.to_i
+  @change = @total.to_i - price.to_i
+if @change != @total.to_i
     remainder=@change
     if @change >=1000
       thousands = @change/1000
